@@ -24,3 +24,6 @@
 // const arr = [8, 3, 4, 5, 5, 6, 2];
 // printTwoElements(arr);
 
+
+
+
