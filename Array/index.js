@@ -110,3 +110,20 @@
 
 
 
+function maxIndexDiff(arr, n) {
+    let maxDiff = -1;
+    let i, j;
+
+    for (let i = 0; i < n; ++i) {
+        for (let j = n - 1; j > i; --j) {
+
+            if (arr[j] > arr[i] && maxDiff < (j - i))
+                maxDiff = j - i;
+        }
+    }
+    return maxDiff;
+}
+let arr = [9, 2, 3, 4, 5];
+let n = arr.length;
+let maxDiff = maxIndexDiff(arr, n);
+console.log(maxDiff);
