@@ -158,3 +158,36 @@
 // printClosest(arr, n, x);
 
 
+
+
+
+
+
+// function findSmallest(arr, n) {
+//     let res = 1;
+
+//     for (let i = 0; i < n && arr[i] <= res; i++)
+//         res = res + arr[i];
+
+//     return res;
+// }
+// let arr1 = [1, 3, 4, 5];
+// let n1 = arr1.length;
+// console.log(findSmallest(arr1, n1));
+
+// let arr2 = [1, 2, 6, 10, 11, 15];
+// let n2 = arr2.length;
+// console.log(findSmallest(arr2, n2));
+
+// let arr3 = [1, 1, 1, 1];
+// let n3 = arr3.length;
+// console.log(findSmallest(arr3, n3));
+
+// let arr4 = [1, 1, 3, 4];
+// let n4 = arr4.length;
+// console.log(findSmallest(arr4, n4));
+
+
+
+
+
