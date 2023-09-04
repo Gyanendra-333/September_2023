@@ -110,20 +110,51 @@
 
 
 
-function maxIndexDiff(arr, n) {
-    let maxDiff = -1;
-    let i, j;
+// function maxIndexDiff(arr, n) {
+//     let maxDiff = -1;
+//     let i, j;
 
-    for (let i = 0; i < n; ++i) {
-        for (let j = n - 1; j > i; --j) {
+//     for (let i = 0; i < n; ++i) {
+//         for (let j = n - 1; j > i; --j) {
 
-            if (arr[j] > arr[i] && maxDiff < (j - i))
-                maxDiff = j - i;
-        }
-    }
-    return maxDiff;
-}
-let arr = [9, 2, 3, 4, 5];
-let n = arr.length;
-let maxDiff = maxIndexDiff(arr, n);
-console.log(maxDiff);
+//             if (arr[j] > arr[i] && maxDiff < (j - i))
+//                 maxDiff = j - i;
+//         }
+//     }
+//     return maxDiff;
+// }
+// let arr = [9, 2, 3, 4, 5];
+// let n = arr.length;
+// let maxDiff = maxIndexDiff(arr, n);
+// console.log(maxDiff);
+
+
+
+
+
+
+
+// function printClosest(arr, n, x) {
+//     let res_l, res_r;
+
+//     let temp = Number.MAX_SAFE_INTEGER;
+
+//     for (let i = 0; i < n - 1; i++) {
+//         for (let j = i + 1; j < n; j++) {
+
+//             if (Math.abs(arr[i] + arr[j] - x) < temp) {
+//                 res_l = i;
+//                 res_r = j;
+//                 temp = Math.abs(arr[i] + arr[j] - x);
+//             }
+//         }
+//     }
+//     console.log("The Closest Pair is : " + arr[res_l] + " and " + arr[res_r]);
+// }
+
+// let arr = [10, 22, 20, 40, 30, 20];
+// let x = 34;
+// let n = arr.length;
+// printClosest(arr, n, x);
+
+
