@@ -191,3 +191,32 @@
 
 
 
+
+
+function isSubsetSum(arr, n, sum) {
+
+    if (sum == 0) return true;
+    if (n == 0 & sum != 0) return false;
+
+    if (arr[n - 1] > sum) return isSubsetSum(arr, n - 1, sum);
+
+    return isSubsetSum(arr, n - 1, sum) || isSubsetSum(arr, n - 1, sum - arr[n - 1]);
+}
+function findPartition(arr, n) {
+    let sum = 0;
+    for (let i = 0; i < n; i++)
+        sum += arr[i];
+
+    if (sum % 2 != 0) return false;
+
+    return isSubsetSum(arr, n, Math.floor(sum / 2));
+
+}
+let arr = [3, 1, 5, 9, 12];
+let n = arr.length;
+
+if (findPartition(arr, n) == true)
+    console.log("Can be Divided into Equal sum");
+
+else
+    console.log("can not be Divided into Equal sum");
