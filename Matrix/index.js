@@ -81,3 +81,35 @@
 
 
 
+// function sortMat(mat, n) {
+
+//     let temp = [];
+//     let k = 0;
+
+//     for (let i = 0; i < n; i++)
+//         for (let j = 0; j < n; j++)
+//             temp[k++] = mat[i][j];
+
+//     temp.sort(function (a, b) { return b - a });
+
+//     k = 0;
+//     for (let i = 0; i < n; i++)
+//         for (let j = 0; j < n; j++)
+//             mat[i][j] = temp[k++];
+
+
+// }
+// function printMat(mat, n) {
+//     for (let i = 0; i < n; i++) {
+//         for (let j = 0; j < n; j++)
+//             console.log(mat[i][j]);
+//     }
+// }
+
+// let mat = [[5, 4, 7], [1, 3, 8], [2, 9, 6]];
+// let n = 3;
+// console.log("Original Matrix:\n");
+// printMat(mat, n);
+// sortMat(mat, n);
+// console.log("\nMatrix After Sorting:\n");
+// printMat(mat, n);
