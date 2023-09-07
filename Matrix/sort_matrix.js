@@ -32,8 +32,8 @@ function printMat(mat, n) {
 
 let mat = [[5, 4, 7], [1, 3, 8], [2, 9, 6]];
 let n = 3;
-console.log("Original Matrix:\n");
+console.log("Original Matrix :");
 printMat(mat, n);
 sortMat(mat, n);
-console.log("\nMatrix After Sorting:\n");
+console.log(" \n Matrix After Sorting :\n");
 printMat(mat, n);
