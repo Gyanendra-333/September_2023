@@ -1,5 +1,3 @@
-
-
 // JavaScript program to find minimum number of
 // reversals required to balance an expression
 
