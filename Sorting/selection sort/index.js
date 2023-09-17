@@ -38,33 +38,64 @@
 
 
 
-function bubbleSort(arr, n) {
+// function bubbleSort(arr, n) {
 
-    let temp, swapped;
+//     let temp, swapped;
 
-    for (let i = 0; i < n - 1; i++) {
-        swapped = false;
+//     for (let i = 0; i < n - 1; i++) {
+//         swapped = false;
 
-        for (let j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
+//         for (let j = 0; j < n - i - 1; j++) {
+//             if (arr[j] > arr[j + 1]) {
 
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                swapped = true;
-            }
+//                 temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//                 swapped = true;
+//             }
+//         }
+//         if (swapped == false)
+//             break;
+//     }
+// }
+// function printArray(arr, size) {
+//     for (let i = 0; i < size; i++)
+//         console.log(arr[i]);
+// }
+// let arr = [64, 34, 25, 12, 22, 11, 90];
+// let n = arr.length;
+
+// bubbleSort(arr, n);
+// console.log("Sorted Array : ");
+// printArray(arr, n);
+
+
+
+
+
+
+
+function insertionSort(arr, n) {
+
+    let key;
+    for (let i = 1; i < n; i++) {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
         }
-        if (swapped == false)
-            break;
+        arr[j + 1] = key;
     }
 }
-function printArray(arr, size) {
-    for (let i = 0; i < size; i++)
+function printArray(arr, n) {
+
+    for (let i = 0; i < n; i++)
         console.log(arr[i]);
 }
-let arr = [64, 34, 25, 12, 22, 11, 90];
+let arr = [12, 11, 13, 5, 6];
 let n = arr.length;
 
-bubbleSort(arr, n);
-console.log("Sorted Array : ");
+insertionSort(arr, n);
 printArray(arr, n);
