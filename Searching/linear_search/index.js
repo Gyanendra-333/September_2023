@@ -40,3 +40,26 @@
 
 
 
+function binarySearch(arr, x) {
+
+    let low = 0;
+    let high = arr.length - 1;
+    let mid;
+
+    while (high >= low) {
+        mid = low + Math.floor((high - low) / 2);
+
+        if (arr[mid] == x) return mid;
+
+        if (arr[mid] > x)
+            high = mid - 1;
+
+        else low = mid + 1;
+    }
+    return -1;
+}
+let arr = [2, 4, 6, 7, 9, 10, 12, 14];
+let x = 14;
+let result = binarySearch(arr, x);
+
+(result == -1) ? console.log("Not Found") : console.log("Element Present in Index : " + result);
