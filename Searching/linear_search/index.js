@@ -91,3 +91,11 @@
 // let result = binarySearch(arr, 0, n - 1, x);
 
 // (result == -1) ? console.log("not Found") : console.log("Element Present In Index = " + result);
+
+
+
+
+
+
+
+
