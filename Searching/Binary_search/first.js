@@ -40,4 +40,3 @@ result = binarySearch(arr, x);
 
 (result == -1) ? console.log("Element is not present in array")
     : console.log("Element is present at index " + result);
-
