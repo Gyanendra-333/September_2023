@@ -66,30 +66,30 @@
 
 
 
-function countMinReversals(expr) {
-    let len = expr.length;
+// function countMinReversals(expr) {
+//     let len = expr.length;
 
-    if (len % 2)
-        return -1;
+//     if (len % 2)
+//         return -1;
 
-    let s = new Array();
-    for (let i = 0; i < len; i++) {
-        if (expr[i] == "}" && !s.length == 0) {
-            if (s[s.length - 1] == "{") s.pop();
-            else
-                s.push(expr[i]);
-        }
-        else s.push(expr[i]);
-    }
-    let red_len = s.length;
-    let n = 0;
-    while (!s.length == 0 && s[s.length
-        - 1] == "{") {
-        s.pop();
-        n++;
-    }
-    return (red_len / 2 + n % 2);
+//     let s = new Array();
+//     for (let i = 0; i < len; i++) {
+//         if (expr[i] == "}" && !s.length == 0) {
+//             if (s[s.length - 1] == "{") s.pop();
+//             else
+//                 s.push(expr[i]);
+//         }
+//         else s.push(expr[i]);
+//     }
+//     let red_len = s.length;
+//     let n = 0;
+//     while (!s.length == 0 && s[s.length
+//         - 1] == "{") {
+//         s.pop();
+//         n++;
+//     }
+//     return (red_len / 2 + n % 2);
 
-}
-let expr = "}}{{";
-console.log(countMinReversals(expr));
+// }
+// let expr = "}}{{";
+// console.log(countMinReversals(expr));
