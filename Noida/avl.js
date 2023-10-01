@@ -279,7 +279,7 @@
 // 		/ \
 // 		2 6
 // 		*/
-// 	document.write("</br>");
+// 	console.log("</br>");
 // 	document.write("Preorder traversal after "+
 // 					"deletion of 10 :" + "</br>");
 // 	preOrder(root);
