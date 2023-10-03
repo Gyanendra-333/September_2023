@@ -14,8 +14,6 @@ function printIndex(str, s) {
         console.log("NONE");
     }
 }
-
-
 var str1 = "GeeksforGeeks";
 var str2 = "Geeks";
 printIndex(str1, str2);
