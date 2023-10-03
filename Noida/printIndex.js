@@ -1,5 +1,6 @@
 // JavaScript program to find indices of all
 // occurrences of one String in other.
+
 function printIndex(str, s) {
     var flag = false;
     for (var i = 0; i < str.length - s.length + 1; i++) {
