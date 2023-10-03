@@ -14,7 +14,7 @@ function printIndex(str, s) {
     }
 }
 
-// Driver code
+
 var str1 = "GeeksforGeeks";
 var str2 = "Geeks";
 printIndex(str1, str2);
