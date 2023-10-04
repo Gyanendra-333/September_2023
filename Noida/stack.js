@@ -13,7 +13,7 @@ function isEmpty() {
 
 function push(x) {
     if (t >= (MAX - 1)) {
-        document.write("Stack Overflow");
+        console.log("Stack Overflow");
         return false;
     } else {
         t += 1;
