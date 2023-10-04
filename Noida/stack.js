@@ -5,7 +5,7 @@
 
 var t = -1;
 var MAX = 1000;
-var a = Array(MAX).fill(0); // Maximum size of Stack
+var a = Array(MAX).fill(0);       // Maximum size of Stack
 
 function isEmpty() {
     return (t < 0);
