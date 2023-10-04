@@ -19,7 +19,7 @@ function push(x) {
         t += 1;
         a[t] = x;
 
-        document.write(x + " pushed into stack<br />");
+        console.log(x + " pushed into stack<br />");
         return true;
     }
 }
