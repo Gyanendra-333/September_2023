@@ -2,6 +2,7 @@
 /* javascript program to implement basic stack
     operations
     */
+
 var t = -1;
 var MAX = 1000;
 var a = Array(MAX).fill(0); // Maximum size of Stack
