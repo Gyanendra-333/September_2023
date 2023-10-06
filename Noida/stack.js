@@ -55,7 +55,7 @@ push(10);
 push(20);
 push(30);
 console.log(pop() + " Popped from stack");
-document.write("<br />Top element is :" + peek());
+console.log("<br />Top element is :" + peek());
 document.write("<br />Elements present in stack : ");
 print();
 
