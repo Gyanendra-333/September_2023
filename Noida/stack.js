@@ -37,7 +37,7 @@ function pop() {
 
 function peek() {
     if (t < 0) {
-        document.write("Stack Underflow");
+        console.log("Stack Underflow");
         return 0;
     } else {
         var x = a[t];
