@@ -47,7 +47,7 @@ function peek() {
 
 function print() {
     for (i = t; i > -1; i--) {
-        document.write(" " + a[i]);
+        console.log(" " + a[i]);
     }
 }
 
