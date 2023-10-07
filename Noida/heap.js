@@ -49,8 +49,9 @@ class MaxHeap {
         return 2 * i + 1;
     }
 
-    // Returns the index of the 
+    // Returns the index of the
     // right child. 
+
     rChild(i) {
         return 2 * i + 2;
     }
