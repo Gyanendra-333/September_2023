@@ -60,8 +60,9 @@ class MaxHeap {
     // case contains the maximum element. 
 
     removeMax() {
-        // Checking whether the heap array 
+        // Checking whether the heap array
         // is empty or not. 
+
         if (this.heapSize <= 0) {
             return null;
         }
