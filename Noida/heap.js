@@ -37,8 +37,9 @@ class MaxHeap {
         }
     }
 
-    // Returns the index of the parent 
+    // Returns the index of the parent
     // of the element at ith index. 
+
     parent(i) {
         return Math.floor((i - 1) / 2);
     }
