@@ -16,8 +16,9 @@ class MaxHeap {
         this.heapSize = 0;
     }
 
-    // Heapifies a sub-tree taking the 
+    // Heapifies a sub-tree taking the
     // given index as the root. 
+
     MaxHeapify(i) {
         const l = this.lChild(i);
         const r = this.rChild(i);
