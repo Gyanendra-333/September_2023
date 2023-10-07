@@ -56,8 +56,9 @@ class MaxHeap {
         return 2 * i + 2;
     }
 
-    // Removes the root which in this 
+    // Removes the root which in this
     // case contains the maximum element. 
+
     removeMax() {
         // Checking whether the heap array 
         // is empty or not. 
