@@ -3,6 +3,7 @@
 
 class MaxHeap {
     constructor(maxSize) {
+
         // the array in the heap. 
         this.arr = new Array(maxSize).fill(null);
 
